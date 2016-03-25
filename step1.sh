@@ -13,6 +13,7 @@ cp /usr/share/doc/openvpn-*/sample/sample-config-files/server.conf /etc/openvpn
 
 echo 'Manually edit ”/etc/openvpn/server.conf” ====> uncomment:'
 echo 'push "redirect-gateway def1 bypass-dhcp"'
+# Comodo DNS: 8.26.56.26, 8.20.247.20  - I dont like google
 echo 'push "dhcp-option DNS 8.26.56.26"'
 echo 'push "dhcp-option DNS 8.20.247.20"'
 echo 'user nobody; group nobody'
