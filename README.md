@@ -5,10 +5,12 @@ Install and configure OpenVPN on CentOS 7 with Comodo authoritative DNS
 
 It generates files for UDP on port 1194. If you use APF or any iptables firewall don't forget to allow this port, it is nonstandard.
 
-`cd`
-`git clone https://github.com/mthjn/centos-openvpn.git`
-`cd centos-openvpn*`
-`sudo chmod 777 step*`
+```
+cd
+git clone https://github.com/mthjn/centos-openvpn.git
+cd centos-openvpn*
+sudo chmod 777 step*
+```
 
 * run step 1, do manual modifications as it says
 * run step 2, do manual modifications as it says
