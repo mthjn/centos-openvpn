@@ -62,4 +62,8 @@ systemctl restart network.service
 systemctl -f enable openvpn@server.service
 systemctl start openvpn@server.service
 
+echo "Grepping netstat to see if openvpn is there ... "
+netstat -taupen | grep "openvpn"
+pause 'Fine [Enter]'
+
 echo "Конец фильма."
