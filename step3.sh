@@ -46,6 +46,10 @@ systemctl stop firewalld
 systemctl start iptables
 iptables --flush
 
+#internal routing: on OpenVZ the interface is venet0 not eth0
+echo "Internal routing: this uses interface eth0. If you have venet0 (check by running ifconfig), edit it in /etc/sysconfig/iptables."
+pause 'Fine [Enter]'
+
 iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 
