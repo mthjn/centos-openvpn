@@ -13,8 +13,7 @@ sudo chmod 777 step*
 ```
 
 * run step 1, do manual modifications as it says
-* run step 2, do manual modifications as it says
-* run step 3
+* run step 2, if all works out you're done
 
 Your server and client files are in `/etc/openvpn/easy-rsa/keys`. 
 
